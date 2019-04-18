@@ -96,7 +96,7 @@ export class MultiPicker implements AfterContentInit, ControlValueAccessor, OnDe
     }
   }
 
-  @HostListener('click', ['$event'])
+  /*@HostListener('click', ['$event'])
   _click(ev: UIEvent) {
     if (ev.detail === 0) {
       // do not continue if the click event came from a form submit
@@ -105,7 +105,7 @@ export class MultiPicker implements AfterContentInit, ControlValueAccessor, OnDe
     ev.preventDefault();
     ev.stopPropagation();
     this.open();
-  }
+  }*/
 
   @HostListener('keyup.space')
   _keyup() {
